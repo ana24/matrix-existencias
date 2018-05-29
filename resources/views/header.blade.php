@@ -17,7 +17,7 @@
 	<nav class="navbar color-fondo fixed-top flex-md-nowrap">
 		
 		<div id="elem-izq">
-			<button class="btn btn-nav" type="button">
+			<button class="btn btn-nav" type="button" onclick="ocultar()">
 				<i class="fas fa-align-justify" title="Menu"></i>
 			</button>
 		</div>
@@ -26,37 +26,37 @@
 
 			<div>
 				<button class="btn btn-nav" type="button">
-						<i class="fas fa-redo"></i>
+					<i class="fas fa-redo"></i>
 				</button>
 
 				<button class="btn btn-nav" type="button">
-						<i class="fas fa-th-large"></i>
+					<i class="fas fa-th-large"></i>
 				</button>
 
 				<button class="btn btn-nav" type="button">
-						<i class="fas fa-search"></i>
+					<i class="fas fa-search"></i>
 				</button>
-				<input type="text" placeholder="Buscar" class="rounded">	
+				<input type="text" placeholder="Buscar" class="rounded buscar">
 			</div>
 			
 			<div>
 				
-				<div class="dropdown elem-nav-pos" style="margin-right: 5px;">
-				  	<button class="btn btn-sm btn-nav dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+				<div class="dropdown elem-nav-pos">
+				  	<button class="btn btn-sm btn-nav dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    Proyectos
 				  	</button>
-				  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				  	<div class="dropdown-menu tam-let distancia" aria-labelledby="dropdownMenuButton">
 				    	<a class="dropdown-item" href="#">Proyecto1</a>
 				    	<a class="dropdown-item" href="#">Proyecto2</a>
 				    	<a class="dropdown-item" href="#">Proyecto3</a>
 					</div>
 				</div>
 
-				<div class="dropdown elem-nav-pos" style="margin-right: 2rem;">
+				<div class="dropdown elem-nav-pos btn-plus">
 				  	<button class="btn btn-sm btn-nav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i title="Nuevo Proyecto" class="fas fa-plus-circle"></i>
 				  	</button>
 				  	
-			    	<form class="dropdown-menu p-4" style="font-size: .8rem;">
+			    	<form class="dropdown-menu p-4 tam-let">
 					  	<div class="form-group">
 					    	<label for="exampleDropdownNombreProyecto">Nombre del proyecto</label>
 					    	<input type="text" class="form-control-sm">
@@ -71,23 +71,23 @@
 					  	</div>
 					  	<div class="form-group">
 					    	<label for="exampleDropdownFormSelect">Tipo de proyecto</label>
-					    	<select value="Seleccione tipo" class="form-control-sm">
+					    	<select value="Seleccione tipo" class="form-control-sm tam-let">
 					    		<option class="form-control">Tipo 1</option>
 					    		<option class="form-control">Tipo 2</option>
 					    	</select>
 					  	</div>
-					  	<button type="submit" class="btn btn-primary btn-sm">Aceptar</button>
+					  	<button type="submit" class="btn btn-primary btn-sm">Crear</button>
 					</form>	
 
 				</div>
 
 				<form class="form-inline my-2 my-lg-0 elem-nav-pos">
-			        <span class="badge badge-primary badge-pill num-mens">2</span>
+			        <span class="badge badge-primary badge-pill">2</span>
 			        <div class="btn-group">
-						<button class="color-fondo nav-item control-formulario mr-sm-2 btn btn-sm dropdown-toggle texto-blanco" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<button class="color-fondo nav-item control-formulario mr-sm-2 btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						    Usuario 1				    
 						</button>
-						<div class="dropdown-menu">
+						<div class="dropdown-menu tam-let distancia">
 						    <a class="dropdown-item" href="#">Action</a>
 							<a class="dropdown-item" href="#">Another action</a>
 							<a class="dropdown-item" href="#">Something else here</a>
@@ -100,15 +100,15 @@
 				  	<button class="btn btn-sm btn-nav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i title="Configuraciones" class="fas fa-cog"></i>
 				  	</button>
 				  	
-			    	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    	<div class="dropdown-menu tam-let distancia" aria-labelledby="dropdownMenuButton">
 				    	<a class="dropdown-item" href="#">Perfil</a>
 				    	<a class="dropdown-item" href="#">Reconocimiento</a>
-				    	<a class="dropdown-item" href="#"><i class="fas fa-power-off fondo-negro"></i> Cerrar sesión</a>
+				    	<a class="dropdown-item" href="#"><i class="fas fa-power-off"></i> Cerrar sesión</a>
 					</div>
 				</div>			    
 
-			</div><!--end container-->
-		</div>
+			</div>
+		</div><!--end container-->
 			
 		<div id="elem-der">
 			<button class="btn btn-nav" type="button">

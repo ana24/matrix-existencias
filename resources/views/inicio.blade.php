@@ -1,13 +1,9 @@
 @include('header')
 	
-	<div class="container">
-		
-			@include('barr-izq')
+@include('barra-izq')		
 
-	        <main role="main" class="margen-sup col-md-9 ml-sm-auto col-lg-10">
-	        	<h2>este es el dashboard</h2>
-	        </main>
-		
-	</div>
+<div class="container-fluid contenido">
+	<h2>Este es el dashboard</h2>
+</div>
 
 @include('footer')
