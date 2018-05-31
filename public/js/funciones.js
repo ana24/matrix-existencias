@@ -3,13 +3,13 @@ Mostrar solo los iconos de los elementos de la barra izquierda
 */
 
 function ocultar() {
-	if($('.resp-elem').hasClass("menu")){
-		$('.resp-elem').removeClass("menu");
+	if($('.resp-elem').hasClass("oculto")){
+		$('.resp-elem').removeClass("oculto");
 		resp_contenido();
 	}
 	else
 	{
-		$('.resp-elem').addClass("menu");
+		$('.resp-elem').addClass("oculto");
 		resp_contenido();
 	}
 
@@ -22,7 +22,7 @@ function resp_contenido(){
 	}
 	else
 	{
-		$('.container-fluid').addClass("contenido");
 		$('.container-fluid').removeClass("reub-contenedor");
+		$('.container-fluid').addClass("contenido");
 	}
 }

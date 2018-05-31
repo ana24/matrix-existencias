@@ -9,11 +9,11 @@ class LoginController extends Controller
     
     public function login()
     {
-    	return view('login');
+    	return view('Login/login');
     }
 
     public function inicio()
     {
-    	return view('inicio');
+    	return view('Inicio/inicio');
     }
 }
